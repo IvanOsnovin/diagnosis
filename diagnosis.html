@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Диагностика</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="div-menu">
+        <ul class="menu">
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="../diagnosis.html">Диагностика</a></li>
+          <li><a href="cgi-bin/journal.py">Журнал</a></li>
+        </ul>
+    </div>
+    <div class="div-title">
+        Диагностика респираторных инфекций
+    </div>
+    <div style="text-align: center;">
+        <p>Введите данные пациента<p>
+        <form action="/cgi-bin/form.py" style="margin-top: 20px;">
+            <table class="form-table">
+                <tr style="height: 10px;"></tr>
+                <tr><td colspan="2"><b>Диэлектрическая проницаемость слюны</b></td></tr>
+                <tr><td colspan="2"><b>Мнимая часть</b></td></tr>
+                <tr>
+                    <td>Абсолютное миниальное значение</td><td><input type="text" name="ip_min" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <td>Среднее значение</td><td><input type="text" name="ip_avg" autocomplete="off" required></td>
+                </tr>
+                <tr><td colspan="2"><b>Действительная часть</b></td></tr>
+                <tr>
+                    <td>Абсолютное миниальное значение</td><td><input type="text" name="rp_min" autocomplete="off" required></td>
+                </tr>
+                <tr class="border">
+                    <td>Среднее значение</td><td><input type="text" name="rp_avg" autocomplete="off" required></td>
+                </tr>
+                <tr style="height: 10px;"></tr>
+                <tr>
+                    <td>Пол</td>
+                    <td>
+                        <input name="sex" type="radio" value=0> Женщина
+                        <input name="sex" type="radio" value=1> Мужчина
+                    </td>
+                </tr>
+                <tr>
+                    <td>Возраст</td><td><input type="number" name="age" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input name="smoking" type="radio" value=1> Некурящий
+                        <input name="smoking" type="radio" value=2> Экс-курильщик
+                        <input name="smoking" type="radio" value=3> Активный курильщик<br>
+                    </td>
+                </tr>
+                <tr style="height: 80px;"><td colspan="2" style="text-align: center;"><input type="submit" class="submit"></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

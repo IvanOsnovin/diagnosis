@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Arial;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+a { text-decoration: none; }
+.div-menu{
+    width: 100%;
+    height: 40px;
+    background: #A34A4A;
+    line-height: 40px;
+}
+.menu {
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+.menu li {
+    display: inline-block;
+    color: #FFF;
+    width: 200px;
+    border-right: 2px solid #FFF;
+    text-align: center;
+    margin-left: -5px;
+}
+.menu li:last-child{border: none;}
+.menu li a {
+    color: #FFF;
+    display:block;
+}
+.menu li a:hover{
+    background: #FFF;
+    color: #000;
+}
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+.div-title{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 100px;
+}
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 90px;
+}
+.footer {
+    height: 80px;
+    margin-top: -80px;
+    background: #A34A4A;
+    color: #FFF;
+    text-align: center;
+
+}
+input{
+    height: 20px;
+}
+.form-table{
+    margin: auto;
+    text-align: left;
+}
+.form-table tr{
+    height: 30px;
+}
+.submit{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #A34A4A;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    width: 180px;
+}
+.submit:hover{
+    cursor: pointer;
+    background: #9C3B3B;
+}
+.journal-table{
+        margin: auto;
+        text-align: center;
+        border-collapse: collapse;
+}
+.journal-table td,th{
+    border: 1px solid black;
+    padding: 3px;
+}
+.button-diag{
+    border-radius: 8px;
+    margin-top: 150px;
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+    background: #A34A4A;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.button-diag:hover{
+    cursor: pointer;
+    background: #9C3B3B;
+}
